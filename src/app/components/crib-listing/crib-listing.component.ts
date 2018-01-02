@@ -23,6 +23,10 @@ export class CribListingComponent implements OnInit {
         data => this.cribs=data,
         error => this.error = error.statusText
       );
+      
+      this.cribsService.newCribSubject.subscribe(
+        data => this.cribs.push(data)
+      );
   }
 
 }
