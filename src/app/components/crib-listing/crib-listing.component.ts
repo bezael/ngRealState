@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { CribsService } from '../../services/cribs.service';
 
-
 @Component({
   selector: 'app-crib-listing',
   templateUrl: './crib-listing.component.html',
@@ -25,7 +24,9 @@ export class CribListingComponent implements OnInit {
       );
       
       this.cribsService.newCribSubject.subscribe(
-        data => this.cribs.push(data)
+        //data => this.cribs.push(data)
+        data => this.cribs = [data, ...this.cribs]
+
       );
   }
 
