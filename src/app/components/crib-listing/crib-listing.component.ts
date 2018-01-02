@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpModule, Http, Response} from '@angular/http';
-import 'rxjs/add/operator/map';
+import { Http } from '@angular/http';
+import { CribsService } from '../../services/cribs.service';
+
 
 @Component({
   selector: 'app-crib-listing',
@@ -11,15 +12,17 @@ export class CribListingComponent implements OnInit {
 	cribs: Array <any>;
 	error: string;
 
-  constructor(private http:Http) { }
+  constructor(
+    private http:Http, 
+    private cribsService:CribsService
+  ) { }
 
   ngOnInit() {
-  	this.http.get('../../../assets/data/cribs.json')
-  	.map( res => res.json())
-  	.subscribe(
-  		data => this.cribs=data,
-  		error => this.error = error.statusText
-  	);
+    this.cribsService.getAllCribs()
+      .subscribe(
+        data => this.cribs=data,
+        error => this.error = error.statusText
+      );
   }
 
 }

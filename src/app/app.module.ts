@@ -8,6 +8,7 @@ import { CribListingComponent } from './components/crib-listing/crib-listing.com
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CribCardComponent } from './components/crib-card/crib-card.component';
 
+import { CribsService } from './services/cribs.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CribCardComponent } from './components/crib-card/crib-card.component';
     BrowserModule,
     HttpModule,
   ],
-  providers: [],
+  providers: [CribsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
