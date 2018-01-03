@@ -17,6 +17,7 @@ import { CribsService } from './services/cribs.service';
 import { UtilService } from './services/util.service';
 import { AddListingFormComponent } from './components/add-listing-form/add-listing-form.component';
 import { SortByPipe } from './pipes/sort-by/sort-by.pipe';
+import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SortByPipe } from './pipes/sort-by/sort-by.pipe';
     NavbarComponent,
     CribCardComponent,
     AddListingFormComponent,
-    SortByPipe
+    SortByPipe,
+    HeroSectionComponent
   ],
   imports: [
     BrowserModule,
