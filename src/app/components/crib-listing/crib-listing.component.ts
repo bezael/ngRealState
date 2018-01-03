@@ -12,9 +12,9 @@ import { UtilService } from '../../services/util.service';
 export class CribListingComponent implements OnInit {
 	cribs: Array <any>;
 	error: string;
-  sortField:string = 'price';
+  sortField:string = 'Type';
   sortDirection: string = 'asc';
-  sortFields: Array<string> = ['address', 'area', 'bathrooms', 'bedrooms', 'price', 'type'];
+  sortFields: Array<string> = ['Address', 'Area', 'Bathrooms', 'Bedrooms', 'Price', 'Type'];
 
   constructor(
     private http:Http, 
