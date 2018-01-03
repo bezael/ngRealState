@@ -5,6 +5,8 @@
 /html
 /tmp
 /out-tsc
+/src/assets/scss
+/src/assets/external
 
 # dependencies
 /node_modules
