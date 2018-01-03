@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-sm-12">
+    <form class="form-horizontal" #newUserForm="ngForm" (ngSubmit)="onRegisterSubmit(newUserForm.value)">
+      <fieldset>
+        <legend>Register</legend>
+        <div class="form-group">
+          <label for="txtName" class="col-lg-2 control-label">Name</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" name="txtName" id="txtName" placeholder="Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="txtEmail" class="col-lg-2 control-label">Email</label>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" name="txtEmail" id="txtEmail" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="txtPassword" class="col-lg-2 control-label">Password</label>
+          <div class="col-lg-10">
+            <input type="password" class="form-control" name="txtPassword" id="txtPassword" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="txtRePassword" class="col-lg-2 control-label">Re-type</label>
+          <div class="col-lg-10">
+            <input type="password" class="form-control" name="txtRePassword" id="txtRePassword" placeholder="Repite Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-10 col-lg-offset-2 text-right">
+            <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

@@ -23,11 +23,11 @@
               </div>
               <!--end element-->
               <div class="element">
-                <a href="#tab-sign-in" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Sign In</a>
+                <a routerLink="/signin" routerLinkActive="active">Sign In</a>
               </div>
               <!--end element-->
               <div class="element">
-                <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Register</a>
+                <a routerLink="/register" routerLinkActive="active">Register</a>
               </div>
               <!--end element-->
               <div class="element">
@@ -59,7 +59,8 @@
           <nav id="primary-nav">
             <ul>
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="about-us.html">About Us</a></li>
+              <li><a routerLink="/blog" routerLinkActive="active">Blog</a></li>
+              <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
               <li>
                 <a href="#" class="has-child">Listing</a>
                 <ul class="child-nav">
@@ -73,24 +74,17 @@
                   <li>
                     <a href="#" class="has-child">Admin</a>
                     <ul class="child-nav">
-                      <li><a href="edit.html">Edit Accommodation</a></li>
-                      <li><a href="my-accommodations.html">My Accommodations</a></li>
+                      <li><a href="#">Edit Accommodation</a></li>
+                      <li><a href="#">My Accommodations</a></li>
                       <li><a href="profile.html">Profile</a></li>
                       <li><a href="reservations.html">Reservations</a></li>
                       <li><a href="reviews.html">Reviews</a></li>
                     </ul>
                   </li>
-                  <li>
-                    <a href="#" class="has-child">Blog</a>
-                    <ul class="child-nav">
-                      <li><a href="blog.html">Blog Listing</a></li>
-                      <li><a href="blog-detail.html">Blog Detail</a></li>
-                    </ul>
-                  </li>
                 </ul>
               </li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li class="submit"><a href="submit.html"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="../../assets/images/plus.png" alt=""></i></a></li>
+              <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+              <li class="submit"><a href="#"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="../../assets/images/plus.png" alt=""></i></a></li>
             </ul>
           </nav>
           <!--end nav-->
@@ -104,3 +98,4 @@
   <!--end header-->
 </div>
 <!--end page-header-->
+
